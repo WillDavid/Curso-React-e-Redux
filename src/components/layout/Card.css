@@ -1,0 +1,29 @@
+.cardDiv {
+    background-color: rgb(251, 76, 7);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+
+.titleDiv {
+    font-size: 32px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.contentDiv{
+    flex-grow: 1;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 10px 0;
+    padding: 20px;
+    text-align: center;
+}
