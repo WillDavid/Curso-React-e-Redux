@@ -13,19 +13,19 @@ export default function App(props) {
         <div className="app">
             <h1>Fundamentos React</h1>
             <div className="cardsDiv">
-                <Card title="Desafio Aleatorio">
+                <Card title="Desafio Aleatorio" color="#FA6900">
                     <Aleatorio max={100} min={0}></Aleatorio>
                 </Card>
 
-                <Card title="Exemplo Fragmento">
+                <Card title="Exemplo Fragmento" color="#E94C6F">
                     <Fragmento></Fragmento>
                 </Card>
 
-                <Card title="Nota do aluno">
+                <Card title="Nota do aluno" color="#E8B71A">
                     <ComParametro title="Situação do aluno" nomeAluno="Pedro" nota={9.4}></ComParametro>
                 </Card>
 
-                <Card title="Hello World">
+                <Card title="Hello World" color="#588c73">
                     <Primeiro></Primeiro>
                 </Card>
             </div>
