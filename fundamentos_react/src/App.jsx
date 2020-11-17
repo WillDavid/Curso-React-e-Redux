@@ -5,6 +5,7 @@ import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
+import FamiliaMembro from './components/basicos/FamiliaMembro'
 
 import './App.css'
 
@@ -14,11 +15,17 @@ export default function App(props) {
         <div className="app">
             <h1>Fundamentos React</h1>
             <div className="cardsDiv">
+                
                 <Card title="Card com familias" color="#FA984">
-                    <Familia></Familia>
+                    <Familia sobrenome="Fernando">
+               
+                        <FamiliaMembro nome="Pedro"/>
+                        {/* <FamiliaMembro nome="Rogerio"/>
+                        <FamiliaMembro nome="João"/> */}
+                    
+                        
+                    </Familia>
                 </Card>
-
-
 
                 <Card title="Desafio Aleatorio" color="#FA6900">
                     <Aleatorio max={100} min={0}></Aleatorio>
