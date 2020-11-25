@@ -23,7 +23,7 @@ export default function App(props) {
                     <ListaProdutos></ListaProdutos>
                 </Card>
 
-                <Card title="Card de Repetição">
+                <Card title="Card de Repetição" color="#FA914">
                     <ListaAlunos></ListaAlunos>
                 </Card>
                 
