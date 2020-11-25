@@ -14,8 +14,19 @@ export default function ListaProdutos(props){
     })
     return (
         <div>
-            <table  style={{textAlign: "left"}}>
-                {TabelaProdutos}
+            <table  style={{textAlign: "center", width: "100%"}}>
+                <thead>
+                    <tr style={{fontWeight: "bold"}}>
+                        <td>ID</td>
+                        <td>Produto</td>
+                        <td>Preço</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {TabelaProdutos}
+                </tbody>
+
+                
             </table>
         </div>
     )
