@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { cloneElement } from 'react'
+/* {cloneElement} */
 
 export default function Familia(props) {
 
     return(
         <div>
-            {React.cloneElement(props.children)}
+           {React.Children.map(props.children, (child) => {
+               return cloneElement(child, props);
+           })}
         </div>
     )
 }

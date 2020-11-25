@@ -7,6 +7,9 @@ import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 
+import ListaAlunos from './components/repeticao/ListaAlunos'
+import ListaProdutos from './components/repeticao/ListaProdutos'
+
 import './App.css'
 
 
@@ -15,13 +18,20 @@ export default function App(props) {
         <div className="app">
             <h1>Fundamentos React</h1>
             <div className="cardsDiv">
+
+                <Card title="Lista de produtos">
+                    <ListaProdutos></ListaProdutos>
+                </Card>
+
+                <Card title="Card de Repetição">
+                    <ListaAlunos></ListaAlunos>
+                </Card>
                 
                 <Card title="Card com familias" color="#FA984">
                     <Familia sobrenome="Fernando">
-               
                         <FamiliaMembro nome="Pedro"/>
-                        {/* <FamiliaMembro nome="Rogerio"/>
-                        <FamiliaMembro nome="João"/> */}
+                       <FamiliaMembro nome="Rogerio"/>
+                        <FamiliaMembro nome="João"/>
                     
                         
                     </Familia>
