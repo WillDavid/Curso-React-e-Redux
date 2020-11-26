@@ -12,6 +12,7 @@ import ListaProdutos from './components/repeticao/ListaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 
 import './App.css'
 
@@ -22,6 +23,9 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
             <div className="cardsDiv">
 
+                <Card title="Comunicação Indireta" color="#3333">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
                 <Card title="Comunicação Direta" color="#6598">
                     <DiretaPai></DiretaPai>
                 </Card>
