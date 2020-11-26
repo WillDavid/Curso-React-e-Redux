@@ -11,6 +11,7 @@ import ListaAlunos from './components/repeticao/ListaAlunos'
 import ListaProdutos from './components/repeticao/ListaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
 
 import './App.css'
 
@@ -20,6 +21,10 @@ export default function App(props) {
         <div className="app">
             <h1>Fundamentos React</h1>
             <div className="cardsDiv">
+
+                <Card title="Comunicação Direta" color="#6598">
+                    <DiretaPai></DiretaPai>
+                </Card>
 
                 <Card title="Informação Usuario" color="#83443">
                     <UsuarioInfo usuario={{nome: "Fernando"}}></UsuarioInfo>
