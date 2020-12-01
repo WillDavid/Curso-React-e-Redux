@@ -4,7 +4,7 @@ import '../formulario/Input.css'
 export default function Input(props){
 
 
-    const [valor, setValor] = useState("")
+    const [valor, setValor] = useState(" ")
 
     function quandoMudar(e){
         setValor(e.target.value)
