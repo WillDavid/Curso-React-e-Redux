@@ -25,7 +25,7 @@ export default function App(props) {
             <h1>Fundamentos React</h1>
             <div className="cardsDiv">
                 <Card title="Contador" color="#1111">
-                    <Contador numeroInicial={10}></Contador>
+                    <Contador numeroInicial={4}></Contador>
                 </Card>
 
                 <Card title="Input Card" color="red">
