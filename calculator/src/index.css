@@ -6,17 +6,15 @@
 
 * {
   font-family: 'RobotoMono', monospaces;
-  margin: 0;
-  padding: 0;
+  
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
   text-align: center;
+  height: 100vh;
   color: #fff;
   background: linear-gradient(to left, #DD5E89, #F7BB97);
 }
