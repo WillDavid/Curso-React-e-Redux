@@ -1,32 +1,40 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-class Equipe extends Component {
-    render(){
-        return(
-            <div>
-                <Sobre nome={this.props.nome} idade={this.props.idade}></Sobre>
-                <hr></hr>
-            </div>
-        );
+export default class App extends Component{
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            nome: "Matheus",
+            contador: 0
+        };
+
+        this.aumentar = this.aumentar.bind(this)
+
+        this.diminuir = this.diminuir.bind(this)
     }
-}
 
-class Sobre extends Component {
+    aumentar(){
+        let state = this.state;
+        state.contador += 1;
+        this.setState(state)
+    }
+
+    diminuir(){
+        let state = this.state;
+        state.contador -= 1;
+        this.setState(state)
+    }
     render(){
         return(
             <div>
-                <h2>{this.props.nome}</h2>
-                <h2>{this.props.idade}</h2>
+                
+                <h3>{this.state.contador}</h3>
+                <button onClick={this.diminuir}>-</button>
+                <button onClick={this.aumentar}>+</button>
+
             </div>
         )
     }
-}
-export default function App(){
-    return(
-        <div>
-            <h1>Conheça nossa equipe</h1>
-            <Equipe idade={13}nome="Matheus"></Equipe>
-            <Equipe idade={56}nome="William"></Equipe>
-        </div>
-    )
 }
